@@ -47,3 +47,21 @@ print(friends)  # prints ['Charlie', 'David', 'Eve', 'Xavier']
 friends.append("Eve")
 print(friends)  # prints ['Charlie', 'David', 'Eve', 'Xavier', 'Eve']
 print(friends.count("Eve"))  # prints 2
+
+print("======================================== 2D Lists ========================================")
+
+# to define a 2D list (list of lists)
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[1][1])
+print("\n-------\n",end="")
+for i in range(len(matrix)):
+    print("|",end="")
+    for x in  range(len(matrix[i])):
+        print(matrix[i][x],end="|")
+    print("\n-------\n",end="")
+
